@@ -4,8 +4,8 @@ namespace ConsoleUI;
 
 public class Car : Vehicle
 {
-    public int numberOfSeats { get; set; }
-    public bool hasTrunk { get; set; }
+    public int NumberOfSeats { get; set; }
+    public bool HasTrunk { get; set; }
 
     public override void DriveAbstract()
     {

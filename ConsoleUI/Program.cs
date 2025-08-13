@@ -40,13 +40,13 @@ namespace ConsoleUI
              * **Set the properties values with object initializer syntax
              */
             Car traverse = new Car()
-                { hasTrunk = true, make = "Chevy", model = "Traverse", numberOfSeats = 7, year = 2016 };
+                { HasTrunk = true, Make = "Chevy", Model = "Traverse", NumberOfSeats = 7, Year = 2016 };
             Motorcycle roadKing = new Motorcycle() 
-                { HasSideCart = false, make = "Harley-Davidson", model = "Road King", NumberOfWheels = 2, year = 2020 };
+                { HasSideCart = false, Make = "Harley-Davidson", Model = "Road King", NumberOfWheels = 2, Year = 2020 };
             Vehicle cyberTruck = new Car() 
-                { hasTrunk = true, make = "Tesla", model = "Cyber Truck", numberOfSeats = 5, year = 2026 };
+                { HasTrunk = true, Make = "Tesla", Model = "Cyber Truck", NumberOfSeats = 5, Year = 2026 };
             Vehicle fz6r = new Motorcycle()
-                { HasSideCart = false, make = "Yamaha", model = "FZ-6R", NumberOfWheels = 2, year = 2012 };
+                { HasSideCart = false, Make = "Yamaha", Model = "FZ-6R", NumberOfWheels = 2, Year = 2012 };
             /*
              * **Add the 4 vehicles to the list
              * **Using a foreach loop iterate through the list and display each of the properties
@@ -57,7 +57,7 @@ namespace ConsoleUI
             vehicles.Add(fz6r);
             foreach (var auto in vehicles)
             {
-                Console.WriteLine($"Year: {auto.year}\r\nMake: {auto.make}\r\nModel: {auto.model}\r\n");
+                Console.WriteLine($"Year: {auto.Year}\r\nMake: {auto.Make}\r\nModel: {auto.Model}\r\n");
                 auto.DriveAbstract();
                 auto.DriveVirtual();
                 Console.WriteLine("-------------------------");
